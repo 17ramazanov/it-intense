@@ -1,0 +1,544 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: #fafafa;
+	font-size: 14px;
+	color: #252b42;
+	font-weight: 500;
+	font-family: Montserrat;
+}
+/* ---------------------------------------------------------------------------- */
+.container {
+	max-width: 1350px;
+	padding: 10px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+/* ---ШАПКА------------------------------------------------------------------------- */
+header {
+    min-height: 265px;
+    width: 100%;
+    background: url(.//hqader.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+
+}
+header:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0,1);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.header-container {
+	display: flex;
+	min-height: 115px;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+@media (max-width: 479px) {
+	.header-container {
+		min-height: 70px;
+	}
+}
+.header-logo {
+	width: 100px;
+	height: 100px;
+	font-weight: 700;
+	color: inherit;
+	position: absolute;
+	top: 25px;
+	left: 15px;
+}
+.header-information{
+	color:white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	position:absolute;
+	top: 155px;
+	right: 975px;
+}
+.header-menu {
+	margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px) {
+	.header-menu {
+		margin: 0px 0px 0px 80px;
+	}
+}
+@media (max-width: 767px) {
+	.header-menu {
+		margin: 0px 0px 0px 40px;
+	}
+}
+@media (max-width: 479px) {
+	.header-menu {
+		margin: 0px 0px 0px 20px;
+	}
+}
+.menu {
+	padding: 5px 0;
+}
+.menu-list {
+	flex-wrap: wrap;
+	display: flex;
+	position: absolute;
+	left: 295px;
+}
+.menu-item:not(:last-child) {
+	margin: 0px 65px 0px 0px;
+}
+.menu-link {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 22px;
+	color: white;
+}
+.menu-link:hover {
+	text-decoration: underline;
+}
+@media (max-width: 479px) {
+	.menu-link {
+		font-size: 18px;
+	}
+}
+.header-contacts{
+	position: absolute;
+	color:white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 29px;
+	top: 65px;
+	left: 1090px;
+}
+span.contact-text{
+	position: absolute;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 22px;
+	left: 85px;
+	padding-top: 5px;
+	
+
+}
+/* ---FOOTER------------------------------------------------------------------------- */
+
+
+
+.footer {
+	position:relative;
+	right:190px;
+	top: 1430px;
+	height:30px;
+	width:100%;
+	display: flex;
+	justify-content:center;
+	
+ }
+
+.footer-container{
+    width:  1180px;
+    height: 100px ;
+	padding: 90px 90px 90px 90px;
+	margin: 0px 0px 0px 380px;
+    background: #1F2021;
+    position: absolute;
+    display: flex;
+}
+.footer-information{
+	position: relative;
+	padding: 150px;
+	bottom: 180px;
+}
+
+.footer-heading{
+    color:white;
+    position: absolute;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 37px;
+	left: 10px;
+	bottom:90px;
+}
+.information-text{
+	color:white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 91.2%;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+}
+
+.footer-input{
+    position: absolute;
+	bottom: 80px;
+    left:550px;
+}
+input[type=email]{
+	width: 300px;
+	height: 65px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin-right: 16px;
+}
+input[type="email"]::-webkit-input-placeholder { 
+    color:    rgb(0, 0, 0);
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	padding-left: 35px;
+}
+
+  
+.footer-button{
+	width: 250px;
+	height: 65px;
+	background: #6EBBD3;
+	border-radius: 10px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: white;
+}
+
+input[type=checkbox] + label {
+	display: block;
+	cursor: pointer;
+  }
+  
+  input[type=checkbox] {
+	display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+	content: "\2714";
+	border: 1px solid rgba(110, 187, 211, 1);
+	background-color:rgba(110, 187, 211, 1);
+	border-radius: 3px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	margin-right: 18px;
+	margin-top: 20px;
+	color: transparent;
+	transition: .2s;
+  }
+  
+  input[type=checkbox]:checked + label:before {
+	background-color: rgba(110, 187, 211, 1);
+	border-color: rgba(110, 187, 211, 1);
+	color: #fff;
+  }
+
+label.checkbox-label{
+	color: white;
+	font-size: 14px;
+
+  }
+
+.after-footer{
+	display: inline-block;
+	position: absolute;
+	padding: 10px;
+	margin: 10px;
+	top:355px;
+
+}
+
+/* ---MAIN------------------------------------------------------------------------- */
+.main-container{
+
+	position:relative;
+	right:350px;
+	top: 30px;
+	height:30px;
+	width:100%;
+	display: flex;
+	justify-content:center;
+	
+}
+.main-menu{
+	display: grid;
+	grid-template-columns:260px 195px 200px;
+	justify-content:start;
+	
+}
+@media(width:1900px){
+	.main-container{
+		padding:30px 265px 80px 270px;
+	}
+
+}
+
+.main-text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 22px;
+}
+.value-text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+}
+.age-text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+}
+.main-value,
+.main-age{
+	position: relative;
+}
+.arrow-value{
+	position: absolute;
+	top: 7px;
+	left: 62px;
+}
+.arrow-age{
+	position: absolute;
+	top: 7px;
+	left: 100px;
+}
+
+.arrow-value:hover{
+	transform: rotate(180deg) ;
+	top: 2px;
+}
+.arrow-age:hover{
+	transform: rotate(180deg) ;
+	top: 2px;
+}
+.main-cards{
+	display:grid;
+	grid-template-columns: 475px 475px 475px;
+	grid-template-rows: 610px 500px;
+
+}
+.card{
+    position: relative;
+    border: none;
+    width: 400px;
+    height: 475px;
+    background-color:rgba(243, 243, 243, 1);
+	margin-top: 40px;
+}
+
+.img-ketu{
+    
+    width:100%;
+    height:100%;
+}
+.ketu-love{
+    width:46px;
+    height: 41px;
+    position:absolute;
+    bottom:400px;
+    left: 325px;
+}
+
+.ketu-love:hover{
+    background-color:white;
+}
+.card-discount{
+	position: absolute;
+	background-color:rgba(229, 45, 45, 1);
+	padding: 10px 20px;
+	bottom: 400px;
+	left: 45px;
+	border-radius: 10px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.name-ketu{
+    position:absolute;
+    width: 195px;
+    height: 29px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+    top:300px;
+    left: 20px;
+}
+.card-characteristic{
+    display: flex;
+    position: absolute;
+    top: 335px;
+    left: 5px;
+}
+
+.card-stick{
+        display: block;
+        position:absolute;
+        width: 4px;
+        height: 26px;
+        top: 19px;
+        left: 18px;
+        background: #6EBBD3;
+}
+.ketu-color{
+    position: relative;
+    top: 5px;
+}
+
+.card-text{
+    font-family: Montserrat;
+    font-style: normal;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+span.card{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.value-ketu{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    top: 395px;
+    left: 27px;
+}
+
+.card-button{
+	width: 400px;
+	height: 75px;	
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size:25px;
+    color:white;
+    background-color:rgba(110, 187, 211, 1);
+    border-radius:0px 0px 20px 20px;
+    border:none;
+	position:absolute;
+	top: 475px;
+}
+
+.cardp-button{
+	width: 400px;
+	height: 75px;	
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size:25px;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    border-radius:0px 0px 20px 20px;
+    border:none;
+	position:absolute;
+	top: 475px;
+}
+
+
+.main-button{
+	position:relative;
+	top: 1270px;
+	left: 235px;
+	width: 380px;
+	height: 65px;
+	border: 1px solid #CACACA;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color:white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 17px;
+	color:black;
+}
+
+.main-strelka{
+	position:relative;
+	top: 1305px;
+	left: 840px;
+	width: 63px;
+	height: 65px;
+	border: 1px solid rgba(110, 187, 211, 1);
+	box-sizing: border-box;
+	background-color:rgba(110, 187, 211, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
